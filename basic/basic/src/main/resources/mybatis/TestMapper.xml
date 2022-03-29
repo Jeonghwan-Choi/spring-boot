@@ -10,21 +10,21 @@
     </select>
  -->
  
-	 <select id="basicList" resultType="Hashmap">;
+	 <select id="basicList" resultType="Hashmap">
 	        SELECT
-	          id,date,name,customer,sqm,number,people
+	        id,date,name,customer,sqm,number,people
 	        FROM basic_info
 	 </select>
 	 
-	 <select id="basicCount" resultType="Integer">;
+	 <select id="basicCount" resultType="Integer">
 	        SELECT
-	          count(*)'id'
+	        count(*)'id'
 	        FROM basic_info
 	 </select>
     
-     <select id="basicName" resultType="com.spring.basic.model.BasicDto">;
+     <select id="basicName" resultType="com.spring.basic.model.BasicDto">
 	        SELECT
-	          name,customer,number where id='3'
+	        name,customer,number where id='3'
 	        FROM basic_info 
 	 </select>
 	 

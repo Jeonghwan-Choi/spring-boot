@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="BoardDAO">
+    <!--  
+    <select id="boardList" resultType="Hashmap">;
+        SELECT
+          email,name
+        FROM Cart
+    </select>
+ -->
+ 
+	 <select id="basicList" resultType="Hashmap">;
+	        SELECT
+	        id,date,name,customer,sqm,number,people
+	        FROM basic_info
+	 </select>
+	 
+	 <select id="basicCount" resultType="Integer">;
+	        SELECT
+	        count(*)'id'
+	        FROM basic_info
+	 </select>
+    
+     <select id="basicName" resultType="com.spring.basic.model.BasicDto">;
+	        SELECT
+	        name,customer,number where id='3'
+	        FROM basic_info 
+	 </select>
+	 
+</mapper>
